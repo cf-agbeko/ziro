@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DJ Ziro</title>
+  <!-- note: index.html is in html/, so we go up one level to assets/css -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <ul>
+      <li><a href="#music">Music</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#media">Media</a></li>
+      <li><a href="#store" class="store">Store</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <!-- <img src="../assets/images/logo.svg" alt="DJ Ziro Logo" class="logo"> -->
+      <h1>DJ Ziro</h1>
+      <p>Kenyan‑born. Based in Canada. Spinning the hottest Afrobeats.</p>
+      <a href="#events" class="btn">Get Tickets</a>
+    </div>
+  </header>
+
+  <!-- EVENTS SECTION -->
+  <section id="events" class="section-diagonal bg-white">
+    <div class="section-content">
+      <div class="text">
+        <h2>Event List</h2>
+      </div>
+      <div class="events-grid">
+        <!-- Card 1 -->
+        <div class="event-card">
+          <img src="../assets/img/bg1.jpg" alt="DJ Night Party">
+          <div class="date-badge">Mar 20</div>
+          <div class="card-info">
+            <h3>Afro Nights</h3>
+            <p>Club Lavish, Toronto, ON</p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="event-card">
+          <img src="../assets/img/bg2.jpg" alt="The Mission">
+          <div class="date-badge">Apr 12</div>
+          <div class="card-info">
+            <h3>Sunset Beats</h3>
+            <p>Beachside Lounge, Vancouver, BC</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="event-card">
+          <img src="../assets/img/bg3.jpg" alt="Planet Disco">
+          <div class="date-badge">May 10</div>
+          <div class="card-info">
+            <h3>Rhythm Fest</h3>
+            <p>Open Air Stage, Calgary, AB</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MUSIC SECTION -->
+  <section id="music" class="section-diagonal bg-red">
+    <div class="section-content">
+  
+      <div class="text">
+        <h2>Featured Mixes</h2>
+      </div>
+  
+      <div class="mixes-grid">
+        <div class="mix-card"
+             data-src="../assets/audio/sample1.mp3"
+             style="background-image: url('../assets/img/mix1.jpg')">
+          <div class="card-info">
+            <h3>Afrobeats Fire Vol. 1</h3>
+            <button class="play-btn">▶</button>
+          </div>
+        </div>
+  
+        <div class="mix-card"
+             data-src="../assets/audio/sample2.mp3"
+             style="background-image: url('../assets/img/mix2.jpg')">
+          <div class="card-info">
+            <h3>East Meets West</h3>
+            <button class="play-btn">▶</button>
+          </div>
+        </div>
+  
+        <!-- add more cards here -->
+  
+      </div>
+  
+      <!-- hidden HTML5 player -->
+      <audio id="audio-player"></audio>
+  
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section-diagonal bg-white">
+    <div class="section-content">
+      <div class="text">
+        <h2>About</h2>
+        <p>
+          Originally from Kenya and now rocking the decks in Canada, DJ Ziro brings the heat with her
+          signature Afrobeats sound. Known for electrifying crowds with rhythm‑driven sets that fuse
+          East African vibes and global grooves.
+        </p>
+      </div>
+      <div class="image">
+        <img src="../assets/img/himg.jpg" alt="About DJ Ziro">
+      </div>
+    </div>
+  </section>
+
+  <!-- MEDIA placeholder (could be gallery or video embeds) -->
+  <section id="media" class="section-diagonal bg-red">
+    <div class="section-content">
+      <div class="text">
+        <h2>Media</h2>
+        <p>Check out photos and videos on my Instagram</p>
+        <a href="https://instagram.com/djziro" target="_blank">Instagram</a> 
+        <a href="https://youtube.com/djziro" target="_blank">YouTube</a>
+      </div>
+      <div class="image">
+        <img src="../assets/img/m4.png" alt="Media Preview">
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 DJ Ziro — All rights reserved.</p>
+    <ul class="social-list">
+      <li><a href="https://instagram.com/djziro" target="_blank">Instagram</a></li>
+      <li><a href="https://soundcloud.com/djziro" target="_blank">SoundCloud</a></li>
+      <li><a href="https://twitter.com/djziro" target="_blank">Pintrest</a></li>
+    </ul>
+  </footer>
+
+  <script src="../assets/js/media-gallery.js"></script>
+  <script src="../assets/js/mixes.js"></script>
+</body>
+</html>
